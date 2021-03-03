@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  color: #d6a740;
+}
+
+.ques {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 80%, 20%;
+}
+.questions {
+  margin: 20px;
+  border-radius: 7px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 550px;
+  height: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.questions h5 {
+  padding: 20px 0 20px;
+}
+
+#bv,
+#bv1,
+#bv2 {
+  display: none;
+  padding: 20px 20px 20px 20px;
+}
+
+i {
+  color: goldenrod;
+}
+
+i:hover {
+  transform: rotate(145deg);
+}
+
+@media (max-width: 680px) {
+  .questions {
+    width: 300px;
+    flex-flow: column;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-basis: 80%, 20%;
+  }
+  .ques {
+    max-width: 500px;
+  }
+}
